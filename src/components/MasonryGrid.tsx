@@ -15,96 +15,78 @@ const MasonryGrid: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<MediaItem | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // will add supabase integration later
+  // Media data with local images - Updated paths with exact filenames
   const mediaItems: MediaItem[] = [
     {
       id: '1',
       type: 'image',
-      src: '/Abhimanyu in Battle Fury.png',
+      src: '/Abhimanyu%20in%20Battle%20Fury.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '2',
       type: 'image',
-      src: '/lord maruti.png',
+      src: '/lord%20maruti.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '3',
       type: 'image',
-      src: '/Warrior of Fury_ Abhimanyu\'s Power.png',
+      src: '/Warrior%20of%20Fury_%20Abhimanyu%27s%20Power.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '4',
       type: 'image',
-      src: '/Handshake at Twilight.png',
+      src: '/Handshake%20at%20Twilight.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '5',
       type: 'image',
-      src: '/ChatGPT Image Jul 13, 2025, 10_44_27 PM.png',
+      src: '/ChatGPT%20Image%20Jul%2013%2C%202025%2C%2010_44_27%20PM.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '6',
       type: 'image',
-      src: '/ChatGPT Image Jul 13, 2025, 11_10_52 PM.png',
+      src: '/ChatGPT%20Image%20Jul%2013%2C%202025%2C%2011_10_52%20PM.png',
+      aspectRatio: 1.5,
+      prompt: 'will add later',
+    },
+    {
+      id: '7',
+      type: 'image',
+      src: '/ChatGPT%20Image%20Jul%2014%2C%202025%2C%2010_57_45%20AM.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '8',
       type: 'image',
-      src: '/ChatGPT Image Jul 14, 2025, 11_23_06 PM.png',
+      src: '/ChatGPT%20Image%20Jul%2014%2C%202025%2C%2011_23_06%20PM.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '9',
       type: 'image',
-      src: '/ChatGPT Image Jul 14, 2025, 11_46_21 PM.png',
+      src: '/ChatGPT%20Image%20Jul%2014%2C%202025%2C%2011_46_21%20PM.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '10',
       type: 'image',
-      src: '/ChatGPT Image Jul 15, 2025, 12_29_19 AM.png',
+      src: '/ChatGPT%20Image%20Jul%2015%2C%202025%2C%2012_29_19%20AM.png',
       aspectRatio: 1.25,
       prompt: 'will add later',
-    },
-    {
-      id: '7',
-      type: 'image',
-      src: '/ChatGPT Image Jul 14, 2025, 10_57_45 AM.png',
-      aspectRatio: 1.5,
-      prompt: 'will add later',
-    },
-    {
-      id: '11',
-      type: 'image',
-      src: '/ChatGPT Image Jul 16, 2025, 12_01_11 AM.png',
-      aspectRatio: 1.5,
-      prompt: 'will add later',
-    },
-    {
-      id: '12',
-      type: 'image',
-      src: '/ChatGPT Image Jul 16, 2025, 12_11_00 AM.png',
-      aspectRatio: 1.5,
-      prompt: 'will add later',
-    },
-
-
-    
-
+    }
   ];
 
   // Handle responsive columns - max 3 columns
