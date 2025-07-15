@@ -15,76 +15,97 @@ const MasonryGrid: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<MediaItem | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Media data with local images - Updated paths with exact filenames
+  // Media data with local images - Updated paths with underscores
   const mediaItems: MediaItem[] = [
     {
       id: '1',
       type: 'image',
-      src: '/Abhimanyu%20in%20Battle%20Fury.png',
+      src: '/image_display_portfolio/Abhimanyu_in_Battle_Fury.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '2',
       type: 'image',
-      src: '/lord%20maruti.png',
+      src: '/image_display_portfolio/lord_maruti.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '3',
       type: 'image',
-      src: '/Warrior%20of%20Fury_%20Abhimanyu%27s%20Power.png',
+      src: '/image_display_portfolio/Warrior_of_Fury_Abhimanyus_Power.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '4',
       type: 'image',
-      src: '/Handshake%20at%20Twilight.png',
+      src: '/image_display_portfolio/Handshake_at_Twilight.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '5',
       type: 'image',
-      src: '/ChatGPT%20Image%20Jul%2013%2C%202025%2C%2010_44_27%20PM.png',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_13_2025_10_44_27_PM.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '6',
       type: 'image',
-      src: '/ChatGPT%20Image%20Jul%2013%2C%202025%2C%2011_10_52%20PM.png',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_13_2025_11_10_52_PM.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '7',
       type: 'image',
-      src: '/ChatGPT%20Image%20Jul%2014%2C%202025%2C%2010_57_45%20AM.png',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_14_2025_10_57_45_AM.png',
       aspectRatio: 1.5,
       prompt: 'will add later',
     },
     {
       id: '8',
       type: 'image',
-      src: '/ChatGPT%20Image%20Jul%2014%2C%202025%2C%2011_23_06%20PM.png',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_14_2025_11_23_06_PM.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '9',
       type: 'image',
-      src: '/ChatGPT%20Image%20Jul%2014%2C%202025%2C%2011_46_21%20PM.png',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_14_2025_11_46_21_PM.png',
       aspectRatio: 1,
       prompt: 'will add later',
     },
     {
       id: '10',
       type: 'image',
-      src: '/ChatGPT%20Image%20Jul%2015%2C%202025%2C%2012_29_19%20AM.png',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_15_2025_12_29_19_AM.png',
       aspectRatio: 1.25,
+      prompt: 'will add later',
+    },
+    {
+      id: '11',
+      type: 'image',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_16_2025_12_01_11_AM.png',
+      aspectRatio: 1.5,
+      prompt: 'will add later',
+    },
+    {
+      id: '12',
+      type: 'image',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_16_2025_12_11_00_AM.png',
+      aspectRatio: 1.5,
+      prompt: 'will add later',
+    },
+    {
+      id: '13',
+      type: 'image',
+      src: '/image_display_portfolio/ChatGPT_Image_Jul_16_2025_12_15_50_AM.png',
+      aspectRatio: 1.5,
       prompt: 'will add later',
     }
   ];
